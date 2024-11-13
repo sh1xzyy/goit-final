@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>NewTest</title>
+	</head>
+	<body>
+		<!-- Header -->
+		<header class="header">
+			<div class="container header__container">
+				<div class="header__left">
+					<a class="header__logo" href="#">
+						<img src="images/logo/Logo.png" alt="logo" />
+					</a>
+					<nav class="header__nav">
+						<ul class="header__list">
+							<li><a class="header__link" href="#">Studio</a></li>
+							<li><a class="header__link" href="#">Portfolio</a></li>
+							<li><a class="header__link" href="#">Contacts</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__right">
+					<div class="header__contact">
+						<a class="header__email" href="mailto:info@devstudio.com"
+							>info@devstudio.com</a
+						>
+						<a class="header__number" href="tel:+110001111111"
+							>+11 (000) 111-11-11</a
+						>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Hero -->
+		<div class="hero">
+			<div class="container">
+				<h1 class="hero__title">
+					Effective Solutions<br />
+					for Your Business
+				</h1>
+				<button class="hero__button" id="open-modal-btn">Order Service</button>
+			</div>
+		</div>
+
+		<!-- Modal -->
+
+		<div class="modal" id="my-modal">
+			<div class="modal__box">
+				<button class="modal__close-btn" id="close-modal-btn">
+					<svg
+						width="8"
+						height="8"
+						viewBox="0 0 8 8"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<g clip-path="url(#clip0_823510_1131)">
+							<path
+								d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"
+								fill="#2E2F42"
+							/>
+						</g>
+						<defs>
+							<clipPath id="clip0_823510_1131">
+								<rect width="8" height="8" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+				</button>
+				<h4 class="modal__title">
+					Leave your contacts and we will call you back
+				</h4>
+				<form action="form" class="form">
+					<label class="form__name" for="name">Name</label><br />
+					<input class="input__modal" type="text" id="name" />
+					<br />
+					<label class="form__name" for="number">Phone</label><br />
+					<input class="input__modal" type="number" id="phone" /><br />
+					<label class="form__name" for="email">Email</label><br />
+					<input class="input__modal" type="email" id="email" /><br />
+					<label class="form__name" for="comment">Comment</label><br />
+					<input
+						class="input__modal input__modal-large"
+						type="text"
+						placeholder="Text Input"
+						id="comment"
+					/><br />
+					<div class="checkbox__wrapper">
+						<input class="checkbox" type="checkbox" />
+						<p class="check__text">
+							I accept the terms and conditions of the
+							<a class="check__link" href="#">Privacy Policy</a>
+						</p>
+					</div>
+					<button class="modal__btn" type="submit">Send</button>
+				</form>
+			</div>
+		</div>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
